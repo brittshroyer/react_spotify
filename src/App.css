@@ -1,5 +1,13 @@
+body{
+  background: rgb(50,50,50);
+  color: white;
+}
+
 .App{
   text-align: center;
   padding: 5%;
-
+}
+.app-header{
+  font-size: 30px;
+  text-shadow: 2px 2px 2px black;
 }
