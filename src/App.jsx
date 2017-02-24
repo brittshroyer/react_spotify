@@ -32,7 +32,7 @@ class App extends Component{
     return(
       <div className='App'>
         <div className='app-header'>
-          Music Master!
+          Spotify React Yo!
         </div>
         <FormGroup>
           <InputGroup>
