@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
-import App from './App.css';
+import './App.css';
 
 class Gallery extends Component {
 
   render(){
-    let albumPics = {images: [{url: ''}]};
-    if(this.props.albums !== []){
-      albumPics = this.props.albums;
-    }
+    console.log('gallery props', this.props);
+    const { tracks } = this.props;
     return(
       <div>
-        <img
-          alt="Album Cover"
-          className="albumImage"
-          src={albumPics[0].images[0].url}
-        />
+        {tracks.map((track, k) => {
+          const trackImg = track.album.images[0].url;
+          return(
+            <div
+              key={k}
+              className='album'
+            >
+              <img
+                src={trackImg}
+                className="track-img"
+                alt="track"
+              />
+            </div>
+          )
+        })}
       </div>
     )
   }
