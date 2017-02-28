@@ -7,19 +7,23 @@ class Gallery extends Component {
     console.log('gallery props', this.props);
     const { tracks } = this.props;
     return(
-      <div>
+      <div className="gallery">
         {tracks.map((track, k) => {
           const trackImg = track.album.images[0].url;
           return(
             <div
               key={k}
-              className='album'
+              className='track'
             >
               <img
                 src={trackImg}
                 className="track-img"
                 alt="track"
               />
+              <p className="track-text">
+                {track.name}
+              </p>
+
             </div>
           )
         })}

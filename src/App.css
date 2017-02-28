@@ -19,3 +19,14 @@ body{
   margin: 5%;
   border: 3px solid black;
 }
+.track-img{
+  height: 200px;
+  width: 200px;
+  display: inline;
+}
+.track{
+  display: inline-block;
+  margin: 4px 8px;
+  border: 2px solid white;
+  cursor: pointer;
+}
